@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+
+  testenvs:
+    image: testenvs
+    build:
+      context: .
+    environment:
+      - "MY_BOOLEAN=true"
+      - "MY_STRING=hello"
